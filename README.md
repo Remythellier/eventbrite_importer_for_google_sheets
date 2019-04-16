@@ -1,7 +1,9 @@
 # Eventbrite API importer for Google Sheets
 
 Google Sheets Script that allows users to search for Eventbrite events with precision and high granularity.
-As the search engine on the Eventbrite website is limited and I couldn't get the clean list of the events that I was looking for. That's why I created this interface. The UX isn't the best but it allows to search for events with a high precision. The result of the search automatically populates a table.
+As the search engine on the Eventbrite website is limited and I couldn't get the clean list of the events that I was looking for.
+That's why I created this interface.
+The UX can be improved but it allows to search for events with a high precision. The result of the search automatically populates a table.
 
 You can search by:
 keyword / location / distance from location / is free or not / start date / end date / category / sub-category
@@ -18,20 +20,22 @@ For more information, the documentation of the Crunchbase API can be found follo
 ### Installing
 
 Go to Google Sheets, open a new file, click on tools, then Script Editor and paste the script.
+
 The first and second sheets should be set as it is on the image template.png, the 2 sheets need to be respectively named "eventbriteSearch" and "eventbriteEvents".
+
 Add your API credentials in the code (EVENTBRITE_KEY and EVENTBRITEPRIVATE_KEY variables)
 
 ## Start
 
-0/ Fill in the spreadsheet as seen on the template.png example. 
-1/ Fill in at least the "location" and the "within" inputs.
-2/ Click on "Calendar" in the menu and then on "retrieve categories from Eventbrite" to get the list of categories available in this area
-3/ Select categories by filling in the inputs with "YES"
-4/ Click on "Calendar" in the menu and then on "retrieve sub-categories from Eventbrite" to get the list of sub-categories available in this area
-5/ Select sub-categories by filling in the inputs with "YES"
-6/ Click on "Calendar" in the menu and then on "retrieve events from eventbrite", this will populate the "eventbriteEvents" sheet with the results
-7/ Click on "Calendar" in the menu and then on "Get precise Eventbrite cost", this will add the minimum cost of each event in the "eventbriteEvents" sheet.
-8/ Enjoy the results!
+- 0/ Fill in the spreadsheet as seen on the template.png example. 
+- 1/ Fill in at least the "location" and the "within" inputs.
+- 2/ Click on "Calendar" in the menu and then on "retrieve categories from Eventbrite" to get the list of categories available in this area.
+- 3/ Select categories by filling in the inputs with "YES".
+- 4/ Click on "Calendar" in the menu and then on "retrieve sub-categories from Eventbrite" to get the list of sub-categories available in this area.
+- 5/ Select sub-categories by filling in the inputs with "YES".
+- 6/ Click on "Calendar" in the menu and then on "retrieve events from eventbrite", this will populate the "eventbriteEvents" sheet with the results.
+- 7/ Click on "Calendar" in the menu and then on "Get precise Eventbrite cost", this will add the minimum cost of each event in the "eventbriteEvents" sheet.
+- 8/ Enjoy the results!
 
 ## Testing the API
 
